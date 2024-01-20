@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+
+<body>
+    <h1>Survey form</h1>
+    <!-- Create form -->
+    <form>
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name">Your name:</label>
+            <input type="text" name="name" id="name" placeholder="Fill your name">
+        </div>
+        <div class="form-control">
+            <label for="email">Your email:</label>
+            <input type="email" name="email" id="email" placeholder="Fill your email">
+        </div>
+        <div class="form-control">
+            <label for="age">Your age:</label>
+            <input type="number" name="age" id="age" placeholder="Fill your age">
+        </div>
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Your role:
+            </label>
+            <select for="role" id="role">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="professor">Professor</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label for="recommend">
+                Would you likt to recommend IT club for your friends?
+            </label>
+            <br>
+            <label for="recommend-1">
+                <input type="radio" name="recommend" id="recommend-1">Yes</input>
+            </label>
+            <label for="recommend-2">
+                <input type="radio" name="recommend" id="recommend-2">Yes of course</input>
+            </label>
+            <label for="recommend-3">
+                <input type="radio" name="recommend" id="recommend-3">Maybe</input>
+            </label>
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="comment">Describe yourself:</label>
+            <br>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+
+</html>
+<style>
+    body {
+        background-color: aquamarine;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    form {
+        background-color: bisque;
+        max-width: 550px;
+        margin: 50px auto;
+        padding: 30px 30px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    .form-control {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .form-control input, textarea, select{
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: inherit;
+        padding: 10px;
+        display: block;
+        width: 100%;
+    }
+    .form-control input[type="radio"]{
+        display: inline-block;
+        width: auto;
+    }
+    textarea{
+        resize: vertical;
+    }
+</style>
